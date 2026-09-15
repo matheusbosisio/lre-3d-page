@@ -8,7 +8,7 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#05070d">
 <link rel="canonical" href="https://lre-3d-page.vercel.app/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -28,6 +28,7 @@
   "@type": "Organization",
   "name": "LRE 3D Criativo",
   "url": "https://lre-3d-page.vercel.app/",
+  "logo": "https://lre-3d-page.vercel.app/assets/logo-lre-3d.webp",
   "description": "Produtos impressos em 3D e projetos personalizados em João Pessoa.",
   "areaServed": {
     "@type": "City",
@@ -117,12 +118,10 @@
   }
   .header-row{
     display:flex; align-items:center; justify-content:space-between;
-    padding:16px 24px;
+    padding:8px 24px;
   }
-  .brand{display:flex; align-items:center; gap:10px; min-height:44px; font-weight:600; font-size:1.05rem;}
-  .brand-mark{width:38px; height:38px; flex-shrink:0;}
-  .brand-name{font-family:var(--font-display); font-size:1.05rem;}
-  .brand-name b{color:var(--neon-blue);}
+  .brand{display:flex; align-items:center; min-height:72px;}
+  .brand-logo{width:72px; height:72px; object-fit:contain;}
 
   .main-nav ul{display:flex; gap:32px;}
   .main-nav a{
@@ -460,6 +459,7 @@
     display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;
   }
   .footer-brand{display:flex; align-items:center; gap:10px; color:var(--text-mid); font-size:.88rem;}
+  .footer-logo{width:42px; height:42px; object-fit:contain; flex-shrink:0;}
   .footer-social{display:flex; gap:18px;}
   .footer-social a{
     color:var(--text-mid); display:flex; align-items:center; gap:6px; min-height:44px; font-size:.88rem;
@@ -532,14 +532,7 @@
 <header class="site-header">
   <div class="wrap header-row">
     <a href="#topo" class="brand">
-      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" stroke="#3ea7ff" stroke-width="1.6"/>
-        <polygon points="20,3 35,11.5 20,20 5,11.5" fill="#3ea7ff" fill-opacity=".18" stroke="#3ea7ff" stroke-width="1.2"/>
-        <line x1="20" y1="20" x2="20" y2="37" stroke="#3df7ac" stroke-width="1.4"/>
-        <line x1="20" y1="20" x2="35" y2="11.5" stroke="#3df7ac" stroke-width="1"/>
-        <line x1="20" y1="20" x2="5" y2="11.5" stroke="#3df7ac" stroke-width="1"/>
-      </svg>
-      <span class="brand-name">LRE 3D <b>Criativo</b></span>
+      <img class="brand-logo" src="/assets/logo-lre-3d.webp" width="384" height="384" alt="LRE 3D Criativo — início" fetchpriority="high" decoding="async">
     </a>
 
     <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
@@ -857,9 +850,7 @@
   <div class="wrap">
     <div class="footer-row">
       <div class="footer-brand">
-        <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" stroke="#3ea7ff" stroke-width="2"/>
-        </svg>
+        <img class="footer-logo" src="/assets/logo-lre-3d.webp" width="384" height="384" alt="" loading="lazy" decoding="async">
         LRE 3D Criativo — João Pessoa, PB
       </div>
       <div class="footer-social">
