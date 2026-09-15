@@ -12,4 +12,8 @@ Informe o WhatsApp oficial no objeto `SITE_CONFIG`, no final do `index.html`. Us
 
 Enquanto o número estiver vazio, o site não publica contato fictício: os links aparecem como indisponíveis e o botão flutuante permanece oculto.
 
+## Fotografias dos produtos
+
+Os elementos com `data-image-slot` são placeholders temporários. Quando as fotos reais estiverem disponíveis, substitua o SVG e a legenda dentro do respectivo `<figure>` por uma imagem responsiva, mantendo o nome do slot para facilitar a identificação do produto.
+
 
