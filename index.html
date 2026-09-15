@@ -25,17 +25,42 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LRE 3D Criativo",
-  "url": "https://lre-3d-page.vercel.app/",
-  "logo": "https://lre-3d-page.vercel.app/assets/logo-lre-3d.webp",
-  "description": "Produtos impressos em 3D e projetos personalizados em João Pessoa.",
-  "areaServed": {
-    "@type": "City",
-    "name": "João Pessoa"
-  },
-  "sameAs": [
-    "https://instagram.com/lre_3d"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lre-3d-page.vercel.app/#organization",
+      "name": "LRE 3D Criativo",
+      "url": "https://lre-3d-page.vercel.app/",
+      "logo": "https://lre-3d-page.vercel.app/assets/logo-lre-3d.webp",
+      "description": "Produtos impressos em 3D e projetos personalizados em João Pessoa.",
+      "areaServed": {
+        "@type": "City",
+        "name": "João Pessoa"
+      },
+      "sameAs": [
+        "https://instagram.com/lre_3d"
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://lre-3d-page.vercel.app/#brinquedo-antiestresse",
+      "name": "Brinquedo antiestresse impresso em 3D",
+      "description": "Peça articulada impressa em 3D, pensada para ocupar as mãos e auxiliar em momentos de concentração.",
+      "category": "Brinquedos antiestresse impressos em 3D",
+      "brand": {
+        "@type": "Brand",
+        "name": "LRE 3D Criativo"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://lre-3d-page.vercel.app/#produtos",
+        "priceCurrency": "BRL",
+        "price": "50.00",
+        "seller": {
+          "@id": "https://lre-3d-page.vercel.app/#organization"
+        }
+      }
+    }
   ]
 }
 </script>
